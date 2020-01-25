@@ -35,7 +35,6 @@
     <div class="form-group col">
       <label>Payment Amount</label>
       <input
-        type=""
         class="form-control"
         (input)="onAmountChange($event.target.value)"
       />
@@ -52,7 +51,6 @@
     <div class="form-group col">
       <label>Height</label>
       <input
-        type=""
         class="form-control"
         (input)="onHeightChange($event.target.value)"
       />
@@ -60,7 +58,7 @@
     <div class="col">
       <label><b>Height</b></label>
       <div>
-        {{ height }}
+        {{ height | number: '1.1-3' }}
       </div>
     </div>
   </div>
